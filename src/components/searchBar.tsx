@@ -14,7 +14,7 @@ function SearchBar() {
   }
   return (
     <form
-      className="flex flex-1 items-center gap-2 bg-gray-100 rounded-md p-2"
+      className="flex flex-1 items-center bg-gray-100 rounded-md p-2"
       onSubmit={handleSeach}
     >
       <input
@@ -23,7 +23,7 @@ function SearchBar() {
         placeholder="Search"
         className="outline-none border p-2 flex-1 bg-transparent rounded-md"
       />
-      <button className="cursor-pointer">
+      <button className="cursor-pointer p-3">
         <Image src="/search.png" width={16} height={16} alt="search" />
       </button>
     </form>

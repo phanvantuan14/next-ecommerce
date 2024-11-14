@@ -21,6 +21,7 @@ function Menu() {
           <Link href="/shop">Shop</Link>
           <Link href="/cart">Cart(1)</Link>
           <Link href="/deals">Deals</Link>
+          <Link href="/contact">About</Link>
           <Link href="/contact">Contact</Link>
           <Link href="/logout">Logout</Link>
         </div>

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
-import CartModal from "./cartModal";
+import CartModal from "./cartmodal";
 
 function NavIcons() {
   const [isProfileOpen, setIsProfileOpen] = useState(false);

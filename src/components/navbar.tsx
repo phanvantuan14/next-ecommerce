@@ -2,16 +2,16 @@ import Link from "next/link";
 import React from "react";
 import Menu from "./menu";
 import Image from "next/image";
-import SearchBar from "./searchbar";
-import NavIcons from "./navicons";
+import SearchBar from "./search-bar";
+import NavIcons from "./nav-icons";
 
 function Navbar() {
   return (
-    <div className="h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative">
+    <div className="h-20 px-4 md:px-8 lg:px-16 xl:px-32 2xl:px-64 relative z-50">
       {/* mobile screens */}
       <div className="h-full md:hidden flex items-center justify-between">
         <Link href={"/"}>
-          <div className="text-2xl tracking-wide">P-TUAN</div>
+          <div className="text-2xl tracking-wide  hover:text-lama">P-TUAN</div>
         </Link>
         <Menu />
       </div>
@@ -21,14 +21,24 @@ function Navbar() {
         <div className="w-1/3 xl:w-1/2 flex items-center gap-12">
           <Link href={"/"} className="flex items-center gap-3">
             <Image src="/logo.png" width={24} height={24} alt="logo" />
-            <div className="text-2xl tracking-wide">P-TUAN</div>
+            <div className="text-2xl tracking-wide hover:text-lama">P-TUAN</div>
           </Link>
           <div className="hidden xl:flex items-center gap-6">
-            <Link href="/">Home</Link>
-            <Link href="/shop">Shop</Link>
-            <Link href="/deals">Deals</Link>
-            <Link href="/contact">About</Link>
-            <Link href="/contact">Contact</Link>
+            <Link className="hover:text-lama" href="/">
+              Home
+            </Link>
+            <Link className="hover:text-lama" href="/list">
+              Shop
+            </Link>
+            <Link className="hover:text-lama" href="/deals">
+              Deals
+            </Link>
+            <Link className="hover:text-lama" href="/contact">
+              About
+            </Link>
+            <Link className="hover:text-lama" href="/contact">
+              Contact
+            </Link>
           </div>
         </div>
         {/* right */}
